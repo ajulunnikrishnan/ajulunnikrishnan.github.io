@@ -5,7 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>What the Land Keeps — Ajul Unnikrishnan</title>
 
-  <style>
+  footer {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editorial-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 5% 180px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 50px 30px;
+}
+
+.editorial-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.large {
+  grid-column: 1 / 9;
+}
+
+.small.right {
+  grid-column: 9 / 13;
+  margin-top: 140px;
+}
+
+.medium.left {
+  grid-column: 1 / 6;
+  margin-top: 120px;
+}
+
+.medium.right {
+  grid-column: 7 / 13;
+  margin-top: 220px;
+}
+
+.wide {
+  grid-column: 2 / 12;
+  margin-top: 160px;
+}
+
+@media (max-width: 768px) {
+  .editorial-grid {
+    display: block;
+    padding: 60px 6% 100px;
+  }
+
+  .editorial-grid > div {
+    margin: 0 0 55px;
+  }
+}
+
+</style><style>
     * {
       margin: 0;
       padding: 0;
